@@ -3,11 +3,11 @@ import { Card } from "../../components";
 import styles from "./Internships.module.scss";
 
 const Internships = () => {
-  const BACKEND_URL = "http://localhost:8001/api";
+  const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
   const [internships, setInternships] = useState([]);
 
   useEffect(async () => {
-    let res = await fetch(`${BACKEND_URL}/internships`);
+    let res = await fetch(`${BACKEND_URL}/api/internships`);
     res = await res.json();
     console.log(res.data);
     let data = res.data;

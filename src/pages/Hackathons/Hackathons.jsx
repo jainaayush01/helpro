@@ -3,11 +3,11 @@ import { HackCard } from "../../components";
 import styles from "./Hackathons.module.scss";
 
 const Hackathons = () => {
-  const BACKEND_URL = "http://localhost:8001/api";
+  const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
   const [hackathons, setHackathons] = useState([]);
 
   useEffect(async () => {
-    let res = await fetch(`${BACKEND_URL}/hackathons`);
+    let res = await fetch(`${BACKEND_URL}/api/hackathons`);
     res = await res.json();
     console.log(res.data);
     let data = res.data;
