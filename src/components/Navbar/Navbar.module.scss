@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+
+.navbar {
+	margin: 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	height: 88px;
+	width: 100vw;
+
+	background-color: #3d5ae3;
+	color: white;
+}
+
+.logo {
+	display: flex;
+	margin-left: 20px;
+
+	font-family: "Comfortaa";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 54px;
+	text-align: center;
+	letter-spacing: -0.333333px;
+
+	color: #ffffff;
+}
+
+.rightNavItem {
+	margin-left: 20px;
+	height: 44px;
+
+	font-family: "DM Sans", sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 27px;
+
+	text-align: center;
+	letter-spacing: -0.333333px;
+
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	// color: white;
+
+	&:hover {
+		cursor: pointer;
+		text-decoration: underline;
+	}
+}
+
+.rightNavBtn {
+	font-family: "Comfortaa";
+	font-style: normal;
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 27px;
+
+	text-align: center;
+	letter-spacing: -0.333333px;
+
+	color: #ffffff;
+
+	&:hover {
+		cursor: pointer;
+		text-decoration: underline;
+	}
+}
+
+.rightNav {
+	display: flex;
+	margin-right: 70px;
+	flex-direction: row;
+	align-self: center;
+	grid-gap: 50px;
+}
+
+// .navLinks {
+// 	display: flex;
+// 	flex-direction: row;
+// 	justify-content: space-around;
+// 	// width: 250px;
+// 	color: white;
+// }
